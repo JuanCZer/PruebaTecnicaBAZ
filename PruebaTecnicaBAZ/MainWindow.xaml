@@ -1,0 +1,34 @@
+﻿<Window x:Class="PruebaTecnicaBAZ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PruebaTecnicaBAZ"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" Margin="69,0,69,0">
+            <TextBox 
+                x:Name="DespligueInformacion"
+                Style="{StaticResource InformacionConsulta}"/>
+        </Grid>
+
+        <Grid Grid.Row="2" Margin="69,0,69,0">
+            <Button
+                x:Name="BtnCancelar"
+                Style="{StaticResource  BtnCancelar}"
+                Click="BtnCancelar_Click"
+                Content="Cancelar Operacion" Margin="196,25,196,25">
+            </Button>
+        </Grid>
+
+
+
+    </Grid>
+</Window>
